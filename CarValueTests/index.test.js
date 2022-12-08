@@ -1,8 +1,9 @@
 const request = require("supertest")("https://jsonplaceholder.typicode.com");
-const assert = require("assert");
+const assert = require("assert"); // assert is used to perform basic value comparisons in tests and other contexts, and to throw an error if the comparison fails.
 
 describe("POST /car-value", () => {
   it("should calculate the value of a car", async () => {
+    // async - write non-blocking code that can be executed in parallel with other code, which can improve performance and make your code more efficient.
     // Set up the request data
     const model = "Civic";
     const year = 2020;
