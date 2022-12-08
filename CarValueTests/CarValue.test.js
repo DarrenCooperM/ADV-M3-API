@@ -3,7 +3,7 @@ const assert = require("assert");
 // const { expect } = require("chai");
 
 // test regex
-it("regex is gucci", () => {
+it("regex is correct in removing spaces and special characters", () => {
   let testString = "This is a Test!^%#$%";
 
   // assign regex to the testString variable
