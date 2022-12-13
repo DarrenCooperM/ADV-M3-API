@@ -9,6 +9,10 @@ env.config(); // syntax to import env data
 // get car value endpoint
 server.post("/car-value", carValue);
 
+server.get("/car-value", (req, res) => {
+  res.send("hello");
+});
+
 const PORT = process.env.PORT || 3002;
 server.listen(PORT, () => {
   console.log("listening to port", PORT);
