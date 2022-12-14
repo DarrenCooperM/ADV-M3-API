@@ -45,14 +45,14 @@ describe("Calculate Car Value", () => {
     assert.strict(result3, expectedOutput3);
   });
   // Test case 4
-  it("year is a string and model is a number", () => {
+  it("should error", () => {
     const input3 = { model: "0922", year: "twenty twenty" };
     const expectedOutput3 = "ERROR! Invalid input values";
     const result3 = calculateCarValue(input3);
     assert.strict(result3, expectedOutput3);
   });
   // Test case 5
-  it("year is a string with special characters so should be an error", () => {
+  it("error", () => {
     const input3 = { model: "BEN", year: "D0V3R**" };
     const expectedOutput3 = "ERROR! Invalid input values";
     const result3 = calculateCarValue(input3);

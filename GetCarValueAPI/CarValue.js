@@ -1,7 +1,7 @@
 function calculateCarValue(model, year) {
   // checking to see if the input is valid.
   if (!(typeof model === "string" && typeof year === "number" && year > 0)) {
-    throw error;
+    return "error: invalid input";
   }
 
   // Convert model to uppercase and remove spaces and other special characters

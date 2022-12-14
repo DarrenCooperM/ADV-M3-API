@@ -11,8 +11,8 @@ function carValue(req, res) {
   try {
     carValue = calculateCarValue(model, year);
     res.json({ carValue });
-  } catch (error) {
-    res.status(500).json({ error: "Error" }); // 500 = internal server error
+  } catch (Error) {
+    res.status(500).json({ Error: "Error" }); // 500 = internal server error
   }
 }
 
