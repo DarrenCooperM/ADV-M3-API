@@ -7,7 +7,7 @@
     "start": "node",
     "dev": "nodemon index.js",
     "test": "mocha",
-    "run": "build"
+    "build": "node.js"
   },
   "keywords": [],
   "author": "",
