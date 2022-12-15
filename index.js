@@ -7,10 +7,10 @@ server.use(express.json()); // allows the backend to understand json data ---- c
 env.config(); // syntax to import env data
 
 // get car value endpoint
-server.post("/car-value", carValue);
+server.post("/getcarvalue", carValue);
 
-server.get("/car-value", (req, res) => {
-  res.send("hello");
+server.get("/getcarvalue", (req, res) => {
+  res.send("Deployment Success");
 });
 
 const PORT = process.env.PORT || 3002;

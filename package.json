@@ -4,10 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node",
+    "start": "node index.js",
     "dev": "nodemon index.js",
-    "test": "mocha",
-    "build": "node.js"
+    "test": "mocha"
   },
   "keywords": [],
   "author": "",
